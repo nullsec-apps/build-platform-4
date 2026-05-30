@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body, #root { height: 100%; }
+body { background:#0F1115; color:#F2F4F7; font-family:'Inter Tight', sans-serif; letter-spacing:-0.03em; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+.font-display { font-family:'Bricolage Grotesque', sans-serif; letter-spacing:-0.02em; }
+.font-mono { font-family:'DM Sans', monospace; letter-spacing:0; }
+
+.blueprint-grid {
+  background-image:
+    linear-gradient(rgba(126,135,148,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(126,135,148,0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+::-webkit-scrollbar { width:8px; height:8px; }
+::-webkit-scrollbar-track { background:transparent; }
+::-webkit-scrollbar-thumb { background:#2a2e38; border-radius:8px; }
+::-webkit-scrollbar-thumb:hover { background:#3a3f4a; }
+
+@keyframes shimmer { 0%{background-position:-200% 0} 100%{background-position:200% 0} }
